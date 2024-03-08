@@ -13,12 +13,17 @@ export default async function Page() {
     .order("emp_id");
 
   return (
-    <div className=" container grid grid-cols-4 gap-4">
-      {employee?.map((emp) => (
-        <Link href={`/checkin/${emp.emp_id}`} key={emp.emp_id}>
-          <EmployeeCard {...emp} />
-        </Link>
-      ))}
+    <div className="container text-center">
+      <h1>ระบบลงเวลา</h1>
+      <br />
+
+      <div className=" grid grid-cols-4 gap-4">
+        {employee?.map((emp) => (
+          <Link href={`/checkin/${emp.emp_id}`} key={emp.emp_id}>
+            <EmployeeCard {...emp} />
+          </Link>
+        ))}
+      </div>
     </div>
   );
 }
