@@ -14,7 +14,7 @@ export default async function Page() {
 
   return (
     <div className="container text-center">
-      <h1>ระบบลงเวลา</h1>
+      <h1 className=" text-2xl">ระบบลงเวลา</h1>
       <br />
 
       <div className=" grid grid-cols-4 gap-4">
