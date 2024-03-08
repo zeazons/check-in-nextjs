@@ -17,7 +17,7 @@ export default async function Page() {
       <h1 className=" text-2xl">ระบบลงเวลา</h1>
       <br />
 
-      <div className=" grid grid-cols-4 gap-4">
+      <div className=" grid sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4">
         {employee?.map((emp) => (
           <Link href={`/checkin/${emp.emp_id}`} key={emp.emp_id}>
             <EmployeeCard {...emp} />
