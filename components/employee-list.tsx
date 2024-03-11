@@ -16,6 +16,7 @@ export default function EmployeeList() {
     const empList = await fetchEmployee();
 
     setEmployeeList(empList as []);
+    setEmployeeFilter(empList as []);
   };
 
   const handleFilter = (e: React.ChangeEvent<HTMLInputElement>) => {
